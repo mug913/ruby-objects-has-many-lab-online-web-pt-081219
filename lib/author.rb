@@ -26,4 +26,8 @@ class Author
     @@all << work 
   end 
   
+  def post_count 
+    @@all.length 
+  end
+  
 end
