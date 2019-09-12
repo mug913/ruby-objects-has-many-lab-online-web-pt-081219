@@ -1,5 +1,6 @@
 class Author 
   attr_accessor :name 
+  @@all = []
   
   def initialize(name) 
     @name = name 
@@ -12,12 +13,17 @@ class Author
   
   def add_post(work)
     work.author = self
+    save(work)
   end
   
   def add_post_by_title(title) 
     work = Post.new(title)
-    add_post(work) 
+    add_post(work)
+    save(work)
   end
-    
+  
+  def save(work) 
+    @@all << work 
+  end 
   
 end
