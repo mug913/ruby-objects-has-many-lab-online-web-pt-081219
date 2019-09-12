@@ -5,4 +5,10 @@ class Post
     @title = title
   end
     
+  def artist= (name)
+    @author = name
+    name.posts << self
+    #binding.pry 
+  end
+  
 end
