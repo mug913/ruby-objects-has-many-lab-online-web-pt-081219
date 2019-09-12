@@ -14,4 +14,7 @@ class Song
     @@all 
   end 
   
+  def artist(name) 
+    
+  
 end
