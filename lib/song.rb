@@ -16,7 +16,8 @@ class Song
   end 
   
   def artist= (name)
-    @artist = name 
+    @artist = name
+    name.songs << self
     binding.pry 
   end
   
