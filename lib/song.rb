@@ -3,7 +3,8 @@ require 'pry'
 class Song 
 @@all = []
 
-  attr_accessor :title, :genre, :artist
+  attr_accessor :title, :genre 
+  attr_reader :artist
   
   def initialize(title)
     @title = title 
@@ -13,5 +14,8 @@ class Song
   def self.all
     @@all 
   end 
+  
+  def artist= (name)
+    @artist = name 
   
 end
