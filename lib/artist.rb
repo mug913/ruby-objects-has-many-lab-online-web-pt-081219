@@ -16,6 +16,7 @@ class Artist
   def add_song(song)
     song.artist = self
     @song << song
+    bindiing.pry
   end
   
 end
