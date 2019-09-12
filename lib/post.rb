@@ -13,4 +13,8 @@ class Post
     #binding.pry 
   end
   
+  def self.all 
+    @@all 
+  end 
+  
 end
