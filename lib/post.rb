@@ -5,7 +5,7 @@ class Post
     @title = title
   end
     
-  def artist= (name)
+  def author= (name)
     @author = name
     name.posts << self
     #binding.pry 
