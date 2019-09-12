@@ -17,5 +17,7 @@ class Song
   
   def artist= (name)
     @artist = name 
+    binding.pry 
+  end
   
 end
