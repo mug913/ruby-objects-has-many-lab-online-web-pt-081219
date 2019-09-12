@@ -5,6 +5,7 @@ class Post
   def initialize(title) 
     @title = title
     @@all << self
+    @author = nil
   end
     
   def author= (name)
@@ -19,10 +20,6 @@ class Post
   
   def author_name 
     #binding.pry
-    if self.author.name
-      self.author.name 
-    else 
-      nil 
-    end
+    self.author.name
   end
 end
