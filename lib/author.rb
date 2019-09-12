@@ -10,7 +10,7 @@ class Author
     @posts 
   end
   
-  def add_posts(work)
+  def add_post(work)
     work.author = self
   end
   
